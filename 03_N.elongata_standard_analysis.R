@@ -29,7 +29,6 @@ library(ggnewscale)
 combined_seurat <- readRDS('./Combined_alter.rds')
 species_id <- 'Neisseria elongata'
 species_label <- 'N.elongata'
-
 species_sub <- subset(combined_seurat, subset = species_info %in% species_id)
 
 #===============================#
@@ -69,6 +68,8 @@ functional_order <- c(
   "Cell adhesion", "Signal transduction", "Binding-effector",
   "Polysaccharides degradation", "Antioxidant defense"
 )
+cluster_color_sub <- c("#ffbb78", "#1f77b4", "darkred", "#636363", "#ffd700",
+                       "#e377c2", "#ff7f0e", "#7f7f7f", "#bcbd22", "#dcdcdc")
 names(cluster_color_sub) <- functional_order
 
 species_sub <- species_sub %>%

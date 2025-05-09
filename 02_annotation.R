@@ -155,9 +155,9 @@ mods <- colnames(Feature)
 mods <- mods[mods %in% c('grey','BC') == F]
 
 pdf('WGCNA_dotlot.pdf', width = 6, height = 5)
-DotPlot(Combined_seurat_object, features= paste0('ME',1:7), group.by = 'seurat_clusters') +
+DotPlot(Combined_seurat_object, features= paste0('ME', 1:7), group.by = 'seurat_clusters') +
   scale_color_gradient2(low = "#7a0177", mid = "white", high = "darkred", midpoint = 0) +
-  labs(x = "Cluster", y = "Module")+
+  labs(x = "Cluster", y = "Module") +
   theme(
     axis.text.x = element_text(color = 'black'),
     text = element_text(size = 12),
@@ -212,15 +212,18 @@ ggplot() +
 dev.off()
 
 # ====== Step 3: Define Cluster Annotations ======
-order = c('Polysaccharide degradation cells',
-          'C4-dicarboxylate anaerobe cells',
-          'Anaerobic ferredoxin-utilizing cells',
-          'Agmatine biosynthesis cells',
-          'Transposase+ cells',
-          'Signal communication cells',
-          'NorM efflux cells',
-          'Outer membrane biogenesis cells') 
-names(cluster_color) <- order
+anno_order <- c('Polysaccharide degradation cells',
+                'C4-dicarboxylate anaerobe cells',
+                'Anaerobic ferredoxin-utilizing cells',
+                'Agmatine biosynthesis cells',
+                'Transposase+ cells',
+                'Signal communication cells',
+                'NorM efflux cells',
+                'Outer membrane biogenesis cells') 
+# cluster_color = c("#1f77b4", "#ff7f0e", "#2ca02c", "#d62728", "#dda0dd", 
+#         "#8c564b", "#e377c2", "#7f7f7f", "#636363", "#17becf", 
+#         "#ffd700", "#bcbd22", "#dcdcdc", "#ff9896", "#c49c94", "#ffbb78")
+# names(cluster_color) <- anno_order
 Combined_seurat_object@meta.data <- Combined_seurat_object@meta.data %>% 
   mutate(
     celltype = case_when(
@@ -233,11 +236,11 @@ Combined_seurat_object@meta.data <- Combined_seurat_object@meta.data %>%
       seurat_clusters %in% c(5) ~  "NorM efflux cells",
       seurat_clusters %in% c(10) ~ "Outer membrane biogenesis cells"
     ), 
-    celltype = factor(celltype,levels = order)
+    celltype = factor(celltype, levels = anno_order)
   )
 Idents(Combined_seurat_object) <- 'celltype'
 all.cluster.markers <- FindAllMarkers(Combined_seurat_object, only.pos = FALSE, min.pct = 0.25, logfc.threshold = 0.25)
-write.table(all.cluster.markers %>% group_by(cluster), file ="celltype_marker.xls", sep = "\t")
+write.table(all.cluster.markers %>% group_by(cluster), file = "celltype_marker.xls", sep = "\t")
 
 
 
