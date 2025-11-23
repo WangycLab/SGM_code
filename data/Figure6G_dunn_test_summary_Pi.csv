@@ -1,0 +1,46 @@
+"Comparison","Z.value","P.value"
+"Anaerobic metabolism - Chitin hydrolysis",5.75082901175451,4.44034488536729e-09
+"Anaerobic metabolism - Fatty acid synthesis",1.16694981167355,0.12161531910166
+"Chitin hydrolysis - Fatty acid synthesis",-3.60264952897669,0.000157495047618251
+"Anaerobic metabolism - Formylglycine generation",-3.80546509198408,7.07689881748166e-05
+"Chitin hydrolysis - Formylglycine generation",-7.72151730498701,5.74764960825469e-15
+"Fatty acid synthesis - Formylglycine generation",-3.96329784065215,3.69607314573651e-05
+"Anaerobic metabolism - General metabolic",-2.52842554000464,0.00572876934343246
+"Chitin hydrolysis - General metabolic",-7.80361309764018,3.00797206386079e-15
+"Fatty acid synthesis - General metabolic",-2.7380439702026,0.00309029058993996
+"Formylglycine generation - General metabolic",2.63081217386571,0.00425905492597475
+"Anaerobic metabolism - Glycosyl transfer",0.176924804561766,0.429783727372855
+"Chitin hydrolysis - Glycosyl transfer",-5.42504124773285,2.89705791494803e-08
+"Fatty acid synthesis - Glycosyl transfer",-1.00647113362143,0.157094495336355
+"Formylglycine generation - Glycosyl transfer",3.79776140597045,7.30043816854409e-05
+"General metabolic - Glycosyl transfer",2.48026203030268,0.00656429323812559
+"Anaerobic metabolism - Protein degradation",-26.1814017819402,2.16410740627023e-151
+"Chitin hydrolysis - Protein degradation",-23.9255124815799,8.31124812363019e-127
+"Fatty acid synthesis - Protein degradation",-18.9371492633521,2.8183818520176e-80
+"Formylglycine generation - Protein degradation",-14.6377283111419,8.06851721059071e-49
+"General metabolic - Protein degradation",-29.3193453699418,2.93947236231042e-189
+"Glycosyl transfer - Protein degradation",-24.6478399865046,1.9408525410154e-134
+"Anaerobic metabolism - Signal transduction",4.06402752357948,2.41165672508022e-05
+"Chitin hydrolysis - Signal transduction",-3.2559087427559,0.000565150370843011
+"Fatty acid synthesis - Signal transduction",1.38959756835859,0.0823255572869229
+"Formylglycine generation - Signal transduction",6.60509393621707,1.98632681755782e-11
+"General metabolic - Signal transduction",8.05224787098328,4.06435349711979e-16
+"Glycosyl transfer - Signal transduction",3.55266227446605,0.000190676862207404
+"Protein degradation - Signal transduction",31.6909129108818,1.03642588370463e-220
+"Anaerobic metabolism - Sugar lactone hydrolysis",-4.36163724154049,6.45463900063217e-06
+"Chitin hydrolysis - Sugar lactone hydrolysis",-8.62593119378252,3.17866175295964e-18
+"Fatty acid synthesis - Sugar lactone hydrolysis",-4.1489179021009,1.6702528803938e-05
+"Formylglycine generation - Sugar lactone hydrolysis",0.529598417564328,0.298195195875328
+"General metabolic - Sugar lactone hydrolysis",-2.9570797063164,0.00155283912331603
+"Glycosyl transfer - Sugar lactone hydrolysis",-4.2617123938774,1.01433210120664e-05
+"Protein degradation - Sugar lactone hydrolysis",20.0079922577809,2.34583930622253e-89
+"Signal transduction - Sugar lactone hydrolysis",-8.30330112956724,5.06289000474768e-17
+"Anaerobic metabolism - Transcriptional regulator",-1.24417454837777,0.106717664421148
+"Chitin hydrolysis - Transcriptional regulator",-6.13980642673985,4.13110498562241e-10
+"Fatty acid synthesis - Transcriptional regulator",-1.97249838460767,0.0242763702678075
+"Formylglycine generation - Transcriptional regulator",2.50831780314859,0.00606537546286263
+"General metabolic - Transcriptional regulator",0.502636177747639,0.307610044414718
+"Glycosyl transfer - Transcriptional regulator",-1.33149917965495,0.0915124073717019
+"Protein degradation - Transcriptional regulator",20.6852623502054,2.35104748397817e-95
+"Signal transduction - Transcriptional regulator",-4.57608283130033,2.36881513483444e-06
+"Sugar lactone hydrolysis - Transcriptional regulator",2.51722590505807,0.00591414811640048

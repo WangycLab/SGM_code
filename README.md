@@ -1,52 +1,60 @@
 
 # Microbial single-cell RNA sequencing for subgingival microbiome
 
-### 1. Data Preprocessing
+This repository contains metadata and analysis scripts for the single-cell RNA sequencing study of the subgingival microbiome in health control and periodontitis, as presented in Ding et al. [PUBLISHER & YEAR].
 
-`01_data_loading_QC.R`
+For questions regarding this dataset or analysis, please contact:
 
-- Performs data loading and quality control filtering
-- Applies batch correction (Harmony)
-- Conducts cell clustering using Seurat
+- Yongcheng Wang (yongcheng@zju.edu.cn)
+- Pei-Hui Ding (phding@zju.edu.cn)
 
-### 2. Functional Annotation
+## Data Availability
 
-`02_annotation.R`
+### Repositary structure
 
-- Performs co-expression network analysis using hdWGCNA
-- Visualizes key marker gene expression patterns
-- Assigns functional annotations to cell clusters
+All data files referenced in the analysis scripts (except RDS files) are located in the `data/` directory.
 
-### 3. *N. elongata* Subpopulation Analysis
+### Data Access
 
-`03_N.elongata_standard_analysis.R`
+- **Processed data**: RDS files, expression matrices, and taxonomy files are available via Figshare, and will be made publicly accessible upon article publication ([LINK]).
 
-- Isolates *N. elongata* subpopulation
-- Performs sub-clustering and cluster-specific DEG analysis
-- Annotates functions for each subcluster
+- **Sequencing data** (Genome Sequence Archive):
+  - scRNA-seq: CRA023798
+  - *N.elongata* whole-genome sequencing: CRA026826
+  - 16S rRNA sequencing: CRA030816
 
-### 4. *N. elongata* Trajectory Inference
+All sequencing data will be made publicly available upon final publication of the article.
 
-`04_N.elongata_monocle.R`
+### Analysis Scripts
 
-- Consctructs single-cell trajectories using Monocle2
-- Identifies pseudotime-dependent gene expression changes
+**Included scripts**:
 
-### 5. Cross-Species Differential Analysis
+`figure2.R`: Workflow of QC; clustering; box plot of gene counts; correlation analysis; comparisons between HC and Pd samples.
 
-`05_pseudobulk_DEG_species.R`
+`figure3.R`: Clustering; WGCNA; marker gene identification.
 
-- Performs pseudobulk-based differential expression analysis
-- Compares *T. denticola* vs *P. gingivalis* transcriptomes
+`figure4.R`: Transcriptional alterations in subgingival bacteria under periodontitis. 
 
-### 5. Condition-Specific Differential Analysis
+`figure5.R`: Functional modules and heterogeneity of *N. elongata* in HC and Pd groups.
 
-`06_pseudobulk_DEG_groups.R`
+`figure6.R`: Metabolic signatures of *P. gingivalis*, *P. intermedia*, and *T. denticola* in periodontitis.
 
-- Conducts pseudobulk DEG analysis between:
-  - Healty control (HC) group
-  - Periodontitis (Pd) group 
 
+
+## Requirement
+
+R packages:
+
+- Seurat (v4.4.0)
+- SeuratObject (v5.0.2)
+- ggplot2
+- data.table
+- Hmisc
+- monocle
+- hdWGCNA
+- SingleCellExperiment
+- DESeq2
+- harmony
 
 
 

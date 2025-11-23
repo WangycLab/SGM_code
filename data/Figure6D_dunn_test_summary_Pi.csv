@@ -1,0 +1,22 @@
+"Comparison","Z.value","P.value"
+"Anaerobic metabolism - General metabolic",-6.23468774970216,2.26340057735726e-10
+"Anaerobic metabolism - Oxidative stress defense",-1.40084151591538,0.0806307353947413
+"General metabolic - Oxidative stress defense",4.68419401944385,1.40531841820283e-06
+"Anaerobic metabolism - Polysaccharide degradation",-2.09268258764773,0.0181887493157354
+"General metabolic - Polysaccharide degradation",2.08096038549567,0.0187187660914536
+"Oxidative stress defense - Polysaccharide degradation",-1.0311715163528,0.151230197670359
+"Anaerobic metabolism - Proteolysis",-9.31769210108831,5.94491641546262e-21
+"General metabolic - Proteolysis",-5.12776660279579,1.46599805690188e-07
+"Oxidative stress defense - Proteolysis",-8.05237384981978,4.060170924359e-16
+"Polysaccharide degradation - Proteolysis",-4.96150985587616,3.49736602069175e-07
+"Anaerobic metabolism - Signal transduction",6.35985362339444,1.00973050255978e-10
+"General metabolic - Signal transduction",14.7284861197249,2.11538752412918e-49
+"Oxidative stress defense - Signal transduction",7.96931708187456,7.9776799732392e-16
+"Polysaccharide degradation - Signal transduction",7.04872785798726,9.02804451395366e-13
+"Proteolysis - Signal transduction",16.5408957081538,9.31162697530623e-62
+"Anaerobic metabolism - Transcriptional regulation",0.595568443115671,0.275731781660223
+"General metabolic - Transcriptional regulation",4.33368880983905,7.3315704114288e-06
+"Oxidative stress defense - Transcriptional regulation",1.53268057234231,0.0626772891299531
+"Polysaccharide degradation - Transcriptional regulation",2.11072649202913,0.0173979137731092
+"Proteolysis - Transcriptional regulation",6.67411366914814,1.24365390280424e-11
+"Signal transduction - Transcriptional regulation",-3.57634496243472,0.000174215901290303
