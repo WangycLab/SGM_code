@@ -1,7 +1,7 @@
 
 # Microbial single-cell RNA sequencing for subgingival microbiome
 
-This repository contains metadata and analysis scripts for the single-cell RNA sequencing study of the subgingival microbiome in health control and periodontitis, as presented in Ding et al. [PUBLISHER & YEAR].
+This repository contains metadata and analysis scripts for the single-cell RNA sequencing study of the subgingival microbiome in health control and periodontitis, as presented in [Ding et al.](https://www.cell.com/cell-host-microbe/abstract/S1931-3128(26)00042-9) (*Cell Host & Microbe*, 2026).
 
 For questions regarding this dataset or analysis, please contact:
 
@@ -16,9 +16,9 @@ All data files referenced in the analysis scripts (except RDS files) are located
 
 ### Data Access
 
-- **Processed data**: RDS files, expression matrices, and taxonomy files are available via Figshare, and will be made publicly accessible upon article publication ([LINK]).
+- **Processed data**: RDS files, expression matrices, and taxonomy files are available via [Figshare](https://figshare.com/s/867dbfdd7997e78d6e71).
 
-- **Sequencing data** (Genome Sequence Archive):
+- **Sequencing data** ([Genome Sequence Archive](https://ngdc.cncb.ac.cn/gsa/)):
   - scRNA-seq: CRA023798
   - *N.elongata* whole-genome sequencing: CRA026826
   - 16S rRNA sequencing: CRA030816
